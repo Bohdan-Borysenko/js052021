@@ -171,3 +171,14 @@ console.log(mass_sl.slice(3));
 let mass_sp = [1,2,3,4,5];
 let sp = mass_sp.splice(1,2);
 console.log(sp);
+
+// Используйте метод reduce в комбинации с concat для свёртки массива массивов в один массив, 
+// у которого есть все элементы входных массивов.
+
+let arrays = [[1, 2, 3], [4, 5], [6]]; 
+
+var arrays = [[1, 2, 3], [4, 5], [6]];
+arrays = arrays.reduce(function(a, b) {
+    return a.concat(b);
+});
+console.log( arrays );
